@@ -1,5 +1,5 @@
 function [] = compile_results()
-output_base = ('\kevmc\AMUG_DataRepos\OPV_PostCessation_Response_Project\OPV_response_WestAfrica_simulations\Simulator\');
+output_base = ('\kevmc\AMUG_DataRepos\OPV_PostCessation_Response_Project\OPV_response_WestAfrica_simulations\');
 output_dirs = dir(output_base);
 
 simconfigs = struct('R0_final',       zeros(length(output_dirs), 1), ...

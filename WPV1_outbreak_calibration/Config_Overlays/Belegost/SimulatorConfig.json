@@ -2,6 +2,6 @@
 	"SIMULATOR" : 
 	{
 		"LocalWorkingDir"			: "C:\\Temp\\WPV1_outbreak_calibration",
-		"OutputDir"					: "C:\\kevmc\\AMUG_DataRepos\\OPV_PostCessation_Response_Project\\WPV1_outbreak_calibration\\Simulator"
+		"OutputDir"					: "C:\\kevmc\\AMUG_DataRepos\\OPV_PostCessation_Response_Project\\WPV1_outbreak_calibration"
 	}
 }

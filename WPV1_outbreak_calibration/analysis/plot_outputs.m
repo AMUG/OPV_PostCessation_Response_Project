@@ -7,7 +7,7 @@ CP = [];
 LL = [];
 Infs = [];
 
-outdir = '\kevmc\AMUG_DataRepos\OPV_PostCessation_Response_Project\WPV1_outbreak_calibration\Simulator\Suite_d3b59fa5-476a-e611-93fd-f0921c16b9e4';
+outdir = '\kevmc\AMUG_DataRepos\OPV_PostCessation_Response_Project\WPV1_outbreak_calibration\Suite_d3b59fa5-476a-e611-93fd-f0921c16b9e4';
 Exps = dir([outdir '\Experiment_*']);
 for ii = 1:5
     load([outdir '\' Exps(ii).name '\results\likelihood.mat']);
