@@ -1,0 +1,13 @@
+{
+	"PARAMETERS" :
+	{
+		"LocalWorkingDir" : "C:\\Temp\\SimulatorDemo"
+	},
+	"CLUSTER_RESUBMISSION_OVERRIDE" : 
+	{
+		"NodeGroup"			: "EMOD_Simulations",
+		"BinDirectory"      : "",
+		"KernelPath"        : "\\\\10.129.110.62\\EMOD\\public\\bin\\Eradication_1_5.exe",
+		"WorkDirectory"     : "\\\\10.129.110.62\\EMOD\\home\\ES_User\\output\\SimulatorDemo\\EWS"
+	}
+}

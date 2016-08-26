@@ -1,0 +1,13 @@
+{
+"SIMULATION" :
+{
+	"inputArgString"    : "-I \\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\Input_SimpleSEIR -D \\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\bin"
+},
+"CLUSTER" :
+{
+	"NodeGroup"			: "emod_de",
+	"BinDirectory"      : "",
+	"KernelPath"        : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioBin\\Eradication.exe",
+	"WorkDirectory"     : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioOutput\\SEIR_w_annmod"
+}
+}

@@ -1,0 +1,57 @@
+{
+     "Default_Config_Path": "defaults/generic_default_config.json", 
+     "parameters": {
+          "CLIMATE": {
+               "Climate_Model": "CLIMATE_CONSTANT", 
+               "Climate_Update_Resolution": "CLIMATE_UPDATE_MONTH"
+          }, 
+          "DEMOGRAPHICS": {
+               "Birth_Rate_Dependence": "POPULATION_DEP_RATE", 
+               "Demographics_Filename": "Seattle_30arcsec_demographics.compiled.json", 
+               "IMMUNITY": {
+                    "Acquisition_Blocking_Immunity_Duration_Before_Decay": 270, 
+                    "Transmission_Blocking_Immunity_Duration_Before_Decay": 270
+               }, 
+               "MORTALITY": {
+                    "Enable_Nondisease_Mortality": 0, 
+                    "Mortality_Blocking_Immunity_Decay_Rate": 0.1, 
+                    "Mortality_Blocking_Immunity_Duration_Before_Decay": 270
+               }, 
+               "SAMPLING": {
+                    "Base_Individual_Sample_Rate": 0.05, 
+                    "Individual_Sampling_Type": "FIXED_SAMPLING", 
+                    "Max_Node_Population_Samples": 100, 
+                    "Sample_Rate_Birth": 1
+               }
+          }, 
+          "DISEASE": {
+               "INFECTIOUSNESS": {
+                    "Infectious_Period_Distribution": "FIXED_DURATION"
+               }, 
+               "Max_Individual_Infections": 5
+          }, 
+          "HPC": {
+               "Num_Cores": 4
+          }, 
+          "MIGRATION": {
+               "Enable_Migration_Heterogeneity": 1, 
+               "LOCAL": {
+                    "Local_Migration_Filename": "Seattle_30arcsec_local_migration.bin"
+               }, 
+               "Migration_Model": "FIXED_RATE_MIGRATION", 
+               "REGIONAL": {
+                    "Regional_Migration_Filename": "Seattle_30arcsec_regional_migration.bin"
+               }, 
+               "Roundtrip_Waypoints": 1, 
+               "SEA": {
+                    "Enable_Sea_Migration": 0
+               }
+          }, 
+          "PRIMARY": {
+               "Config_Name": "1_Generic_Seattle_MultiNode", 
+               "Geography": "Seattle", 
+               "Node_Grid_Size": 0.009, 
+               "Run_Number": 42
+          }
+     }
+}

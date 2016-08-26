@@ -1,0 +1,33 @@
+{
+"CALIBTOOL" : 
+	{
+		"LikelihoodEvaluator" : "WPV1OutbreakAnalyzer",
+		"NumInitialSamples"  : 2000,
+		"NumSamplesPerIteration" : 2000,
+		"NumResamples"		: 2000,
+		"MaxIterations"		: 5,
+		"RandomSeed"        : 1,
+		"DebugFlag"			: 0,
+		"OutputDir"			: "",
+		"CredentialsFile"	: "",
+		"LocalWorkingDir"	: ""
+	},
+"PRIOR" :
+	[
+		{
+			"pdf_type"			: "ProbabilityDistributions.UniformDistribution",
+			"pdf_params"		: { "min" : 0.22, "max" : 0.4, "scale" : "linear" },
+			"parameter_names"	: "Base_Infectivity",
+			"json_paths"		: "config.params.Base_Infectivity"
+		},
+		{
+			"pdf_type"			: "ProbabilityDistributions.UniformDistribution",
+			"pdf_params"		: { "min" : -12, "max" : -5, "scale" : "linear" },
+			"parameter_names"	: "Local_and_Regional_Migration",
+			"json_paths"		: "META.Dual_Migration_Log"
+		}
+	],
+"LIKELIHOOD" :
+	{
+	}
+}

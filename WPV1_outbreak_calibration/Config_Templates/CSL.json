@@ -1,0 +1,62 @@
+
+{ 
+    "EXPERIMENT": 
+    { 
+        "Name": "Polio 2008 WPV1 outbreak calibration",
+        "Description": "Migration rate calibration",
+        "Tags": 
+        { 
+            "DTKVersion": "Eradication_20160727_58cba86c13e4bce811a8b534c0f6ec5ea44001c5.exe"
+        },
+        "BUILDER": 
+        { 
+            "Name": "@PolioOutbreakResponse_ExperimentBuilder",
+            "EnvironmentName": "Belegost",
+            "COMPS_PATH_USER_Resolution": "\\\\idmppfil01\\IDM\\home\\kmccarthy",
+            "RunNumbers": "[-1000]",
+            "Base_Demog_File_Dir": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\WPV1_outbreak_calibration\\input\\demographics\\",
+            "Base_Demog_File_Name": "WestAfrica_ProvinceLevel_demographics.json",
+            "Demographics_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructDemographicsFiles\\compiledemog.py",
+            "Base_Mig_File_Dir": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\WPV1_outbreak_calibration\\input\\migration\\",
+            "Base_Mig_File_Name": "gravity_model",
+            "Migration_Header_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructMigrationFiles\\createmigrationheader.py",
+            "Migration_Binary_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructMigrationFiles\\convert_txt_to_bin.py",
+            "Migration_File_Type": "",
+            "Scheduler": "idmpphpc01",
+            "UnzipCmd": "\\\\idmppfil01\\IDM\\home\\kmccarthy\\GenericPolioBin\\unzip.exe",
+            "CONFIG_PARAMETERS": 
+            { 
+                "Local_Migration_Filename": "local_migration\\\\WestAfrica_Provincelevel_linear_local_migration.bin",
+                "Regional_Migration_Filename": "regional_migration\\\\WestAfrica_Provincelevel_linear_regional_migration.bin",
+                "Base_Infectivity": 0.23
+            },
+            "CAMPAIGN_PARAMETERS": {},
+            "DEMOGRAPHICS_PARAMETERS": {},
+            "MIGRATION_PARAMETERS": {},
+            "SWEEP_PARAMETERS": 
+            { 
+                "CONFIG": {},
+                "CAMPAIGN": {},
+                "DEMOGRAPHICS": {},
+                "MIGRATION": {}
+            }
+        }
+    },
+    "SIMULATION": 
+    { 
+        "configFilePath": "Configs_DTK\\config.json",
+        "inputArgString": "-I $COMPS_PATH(USER)\\input\\WPV1_outbreak_calibrations -O output\\ -C config.json"
+    },
+    "CLUSTER": 
+    { 
+        "NodeGroup": "emod_abcd",
+        "EnvironmentName": "Belegost",
+        "BinDirectory": "",
+        "KernelPath": "$COMPS_PATH(USER)\\GenericPolioBin\\Eradication_20160727_58cba86c13e4bce811a8b534c0f6ec5ea44001c5.exe",
+        "WorkDirectory": "$COMPS_PATH(USER)\\GenericPolioOutput\\WPV1_outbreak_calibrations",
+        "Priority": "Normal",
+        "NumRetries": 3,
+        "maxCores": 1,
+        "minCores": 1
+    }
+}

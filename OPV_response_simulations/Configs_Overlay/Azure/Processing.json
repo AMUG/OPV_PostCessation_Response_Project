@@ -1,0 +1,13 @@
+{
+	"PARAMETERS" :
+	{
+		"LocalWorkingDir" : "C:\\Temp\\SimulatorDemo"
+	},
+	"CLUSTER_RESUBMISSION_OVERRIDE" : 
+	{
+		"NodeGroup"   : "Azure_group1",
+		"BinDirectory"	: "\\\\172.16.1.4\\emodRoot\\Public\\bin",
+		"KernelPath"	: "\\\\172.16.1.4\\emodRoot\\Public\\bin\\Eradication_1_5.exe",
+		"WorkDirectory"	: "\\\\172.16.1.4\\emodRoot\\Home\\dklein\\output\\SimulatorDemo\\EWS"
+	}
+}

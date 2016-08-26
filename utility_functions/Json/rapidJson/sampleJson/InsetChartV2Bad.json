@@ -1,0 +1,12 @@
+{
+    "Header" : {
+        "Channels" : 42,
+        "Report_Version" : "2"
+    },
+    "ChannelTitles" : [
+        "Chris",
+        "Joe",
+        "Sam",
+        "Zadok"
+    ]
+}

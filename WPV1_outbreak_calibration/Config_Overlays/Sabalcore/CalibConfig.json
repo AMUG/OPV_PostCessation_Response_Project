@@ -1,0 +1,8 @@
+{
+"CALIBTOOL" : 
+	{
+		"OutputDir"			: "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\GenericPolio_20140206\\simulation_working_dir\\SEIR_w_annmod",
+		"CredentialsFile"	: "Config_Merged\\ES_Credentials.json",
+		"LocalWorkingDir"	: "C:\\Temp"
+	}
+}

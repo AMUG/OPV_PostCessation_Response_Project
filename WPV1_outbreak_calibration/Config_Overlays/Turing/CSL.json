@@ -1,0 +1,13 @@
+{
+"SIMULATION" :
+{
+	"inputArgString"    : "-I \\\\rivendell.emod.int\\Emod\\home\\ghuynh\\input\\Namawala_input -D \\\\rivendell.emod.int\\Emod\\home\\ghuynh\\bin"
+},
+"CLUSTER" :
+{
+	"NodeGroup"			: "OnlineNodes,EMOD",
+	"BinDirectory"      : "",
+	"KernelPath"        : "\\\\rivendell.emod.int\\EMOD\\home\\ghuynh\\bin\\Eradication.exe",
+	"WorkDirectory"     : "\\\\rivendell.emod.int\\EMOD\\home\\ghuynh\\output\\Malaria"
+}
+}

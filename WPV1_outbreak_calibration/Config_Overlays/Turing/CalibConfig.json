@@ -1,0 +1,8 @@
+{
+"CALIBTOOL" : 
+	{
+		"OutputDir"			: "\\\\rivendell\\Emod\\home\\ghuynh\\output\\Malaria",
+		"CredentialsFile"	: "Config_Merged\\ES_Credentials.json",
+		"LocalWorkingDir"	: "C:\\Temp"
+	}
+}

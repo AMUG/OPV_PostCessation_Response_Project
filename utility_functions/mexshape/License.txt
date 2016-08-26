@@ -1,0 +1,2 @@
+No license from file exchange.  Credited to John Evans, 2004 (updated 2006).
+https://www.mathworks.com/matlabcentral/fileexchange/5951-mex-shape/

@@ -1,0 +1,8 @@
+{
+"CALIBTOOL" : 
+	{
+		"OutputDir"			: "C:\\kevmc\\AMUG_DataRepos\\OPV_PostCessation_Response_Project\\WPV1_outbreak_calibration\\Simulator",
+		"CredentialsFile"	: "Config_Merged\\ES_Credentials.json",
+		"LocalWorkingDir"	: "C:\\Temp\\WPV1_outbreak_calibration"
+	}
+}

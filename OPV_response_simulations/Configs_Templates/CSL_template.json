@@ -1,0 +1,82 @@
+
+{ 
+    "EXPERIMENT": 
+    { 
+        "Name": "Polio post-cessation outbreak separatrix",
+        "Description": "Two-Dimensional Separatrix",
+        "Tags": 
+        { 
+            "separatrix": {},
+            "DTKVersion": "Eradication_20160425.exe"
+        },
+        "BUILDER": 
+        { 
+            "Name": "@NDPolioSweep_and_Calib_ExperimentBuilder",
+            "EnvironmentName": "Belegost",
+            "param_paths": [ "META.Dual_Migration_Log", "META.Target_Age_Min_All" ],
+            "param_ranges": [ 
+                { 
+                    "min": -11,
+                    "max": -5
+                }, 
+                { 
+                    "min": 0,
+                    "max": 5
+                } ],
+            "param_names": [ "Migration Scaling Factor", "Time Since Cessation" ],
+            "RunNumbers": "[-1000]",
+            "Base_Demog_File_Dir"               : "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\OPV_response_sims_8core\\input\\demographics\\",
+            "Base_Demog_File_Name"              : "WestAfrica_Province_demographics.json",
+            "Demographics_Compile_Command"      : "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\OPV_response_sims_8core\\compiledemog.py",
+            "Base_Mig_File_Dir"                 : "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\OPV_response_sims_8core\\input\\migration\\",
+            "Base_Mig_File_Name"                : "gravity_model",
+            "Migration_Header_Compile_Command"  : "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\OPV_response_sims_8core\\createmigrationheader.py",
+            "Migration_Binary_Compile_Command"  : "C:\\Users\\kmccarthy\\EMOD_Research\\users\\kmccarthy\\OPV_response_sims_8core\\convert_txt_to_bin.py",
+            "Migration_File_Type"               : "",
+            "Scheduler": "idmpphpc01",
+            "Nodegroup": "emod_a",
+            "UnzipCmd": "\\\\idmppfil01\\IDM\\home\\kmccarthy\\GenericPolioBin\\unzip.exe",
+            "CONFIG_PARAMETERS": 
+            { 
+                "Base_Population_Scale_Factor": 0.01
+            },
+            "CAMPAIGN_PARAMETERS": {},
+            "DEMOGRAPHICS_PARAMETERS": {},
+            "MIGRATION_PARAMETERS": 
+            { 
+            },
+            "SWEEP_PARAMETERS": 
+            { 
+                "CONFIG": {                
+                "META.OPV_IPV_response_coverage_setter": {
+                    "MIN": 0.8,
+                    "MAX": 0.8,
+                    "NPOINTS": 1,
+                    "SPACING": "LINEAR",
+                    "JSON_PATH": "META.OPV_IPV_response_coverage_setter"
+                }
+                },
+                "CAMPAIGN": {},
+                "DEMOGRAPHICS": {},
+                "MIGRATION": {}
+            }
+        }
+    },
+    "SIMULATION": 
+    { 
+        "configFilePath": "Configs_DTK\\config.json",
+        "inputArgString": ""
+    },
+    "CLUSTER": 
+    { 
+        "NodeGroup": "",
+		"EnvironmentName"	: "Belegost",
+        "BinDirectory": "",
+        "KernelPath": "",
+        "WorkDirectory": "",
+        "Priority": "Normal",
+        "NumRetries": 3,
+        "maxCores": 8,
+        "minCores": 8
+    }
+}

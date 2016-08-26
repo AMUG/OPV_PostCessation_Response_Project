@@ -1,0 +1,15 @@
+{
+	"PARAMETERS" :
+	{
+		"LocalWorkingDir" : "C:\\Temp\\WPV1_outbreak_calibration"
+	},
+	"CLUSTER_RESUBMISSION_OVERRIDE" : 
+	{
+		"NOT_OVERRIDING_NodeGroup"		: "",
+		"NOT_OVERRIDING_BinDirectory"	: "",
+		"NOT_OVERRIDING_KernelPath"		: "",
+		"NOT_OVERRIDING_WorkDirectory"	: ""
+	}
+}
+
+	

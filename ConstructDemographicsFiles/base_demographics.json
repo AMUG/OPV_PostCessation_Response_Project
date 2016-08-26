@@ -1,0 +1,86 @@
+
+{ 
+    "Metadata": 
+    { 
+        "DateCreated": "Feb 6 09:29:00 2014",
+        "Tool": "By hand",
+        "Author": "kmccarthy",
+        "IdReference": "Legacy",
+        "NodeCount": 1,
+        "Resolution": 300
+    },
+    "Defaults": 
+    { 
+        "IndividualProperties": [],
+        "IndividualAttributes": 
+        { 
+            "DESC_PrevalenceDist": "No initial prevalence",
+            "PrevalenceDistributionFlag": 0,
+            "PrevalenceDistribution1": 0,
+            "PrevalenceDistribution2": 0,
+            "DESC_ImmunityDist": "No initial immunity",
+            "ImmunityDistributionFlag": 0,
+            "ImmunityDistribution1": 0,
+            "ImmunityDistribution2": 0,
+            "DESC_RiskDist": "No risk heterogeneity",
+            "RiskDistributionFlag": 0,
+            "RiskDistribution1": 1,
+            "RiskDistribution2": 0,
+            "DESC_MigrationDist": "No migration heterogeneity",
+            "MigrationHeterogeneityDistributionFlag": 0,
+            "MigrationHeterogeneityDistribution1": 1,
+            "MigrationHeterogeneityDistribution2": 0,
+            "DESC_AgeDist": "Box from 0 to 5",
+            "AgeDistribution": 
+            { 
+                "NumDistributionAxes": 0,
+                "ResultUnits": "years",
+                "ResultScaleFactor": 365,
+                "ResultValues": [ 0, 1, 2, 3, 4, 5 ],
+                "DistributionValues": [ 0, 0.214, 0.42099999999999999, 0.61799999999999999, 0.81200000000000006, 1 ]
+            },
+            "DESC_MortDist": "Realistic infant and toddler mortality, immediate death upon turning 5",
+            "MortalityDistribution": 
+            { 
+                "NumDistributionAxes": 2,
+                "AxisNames": [ "gender", "age" ],
+                "AxisUnits": [ "male=0,female=1", "years" ],
+                "AxisScaleFactors": [ 1, 365 ],
+                "NumPopulationGroups": [ 2, 8 ],
+                "PopulationGroups": 
+                [
+                    [ 0, 1 ], 
+                    [ 0, 0.001, 0.083299999999999999, 0.083400000000000002, 0.999, 1, 5, 5.0010000000000003 ]
+                ],
+                "ResultUnits": "annual deaths per 1000 individuals",
+                "ResultScaleFactor": 2.7397260273972604e-06,
+                "ResultValues": 
+                [
+                    [ 0, 584, 584, 39, 39, 23, 23, 100000000 ], 
+                    [ 0, 584, 584, 39, 39, 23, 23, 100000000 ]
+                ]
+            }
+        },
+        "NodeAttributes": 
+        { 
+            "Airport": 0,
+            "Altitude": 1,
+            "BirthRate": 0.00067000000000000002,
+            "Region": 1,
+            "Seaport": 0,
+            "AbovePoverty": 0.5,
+            "Urban": 1
+        }
+    },
+    "Nodes": [ 
+        { 
+            "State": "Kano",
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.7574188,
+                "Longitude": 8.6600599999999996,
+                "InitialPopulation": 9401288
+            },
+            "NodeID": 1
+        } ]
+}

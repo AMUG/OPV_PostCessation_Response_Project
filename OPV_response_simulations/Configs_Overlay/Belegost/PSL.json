@@ -1,0 +1,15 @@
+{
+	"PARAMETERS" :
+	{
+		"LocalWorkingDir" : "C:\\Temp\\OPV_response_WestAfrica_simulations"
+	},
+	"CLUSTER_RESUBMISSION_OVERRIDE" : 
+	{
+		"NOT_OVERRIDING_NodeGroup"		: "",
+		"NOT_OVERRIDING_BinDirectory"	: "",
+		"NOT_OVERRIDING_KernelPath"		: "",
+		"NOT_OVERRIDING_WorkDirectory"	: ""
+	}
+}
+
+	

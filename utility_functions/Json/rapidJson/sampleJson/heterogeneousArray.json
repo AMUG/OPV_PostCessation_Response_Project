@@ -1,0 +1,18 @@
+[
+    true,
+    false,
+    null,
+    42,
+    "Hello, World!",
+    {
+    	"boolean" : true,
+    	"null"    : null,
+    	"scalar"  : 3.14159265,
+    	"string"  : "Now is the time for all good men to come to the aid of the party.",
+    	"object"  : {
+    		"e" : 2.7182818284590452353602874713527
+    	},
+    	"array" : [ 0, 1, 2, 6, 24, 120 ]
+    },
+    [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
+]

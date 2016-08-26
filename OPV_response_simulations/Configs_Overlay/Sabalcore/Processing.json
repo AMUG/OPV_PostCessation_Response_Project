@@ -1,0 +1,15 @@
+{
+	"PARAMETERS" :
+	{
+		"LocalWorkingDir" : "C:\\Temp"
+	},
+	"CLUSTER_RESUBMISSION_OVERRIDE" : 
+	{
+	"NodeGroup"			: "emod_de",
+	"BinDirectory"      : "",
+	"KernelPath"        : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioBin\\Eradication.exe",
+	"WorkDirectory"     : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioOutput\\140213"
+	}
+}
+
+		

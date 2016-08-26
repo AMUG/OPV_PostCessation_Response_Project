@@ -1,0 +1,40 @@
+{
+    "duration" : 3650,
+    "runs" : 512,
+    "samples" : 3650,
+    "solver" : "$SOLVER$",
+    "output" : {
+        "versioninfo" : false,
+        "headers" : true
+    },
+    "b-leaping" : {
+        "Tau" : 0.1
+    },
+    "tau-leaping" : {
+        "epsilon" : 0.01,
+        "Nc" : 2,
+        "Multiple" : 10,
+        "SSARuns" : 100
+    },
+    "r-leaping" : {
+        "epsilon" : 0.01,
+        "theta" : 0.0,
+        "sorting interval" : 365.0,
+        "verbose" : false
+    },
+    "dfsp" : {
+        "umax" : 120,
+        "verbose" : false
+    },
+    "hybrid" : {
+        "method" : "ExactMethod"
+    },
+    "otssa" : {
+        "verbose" : false
+    },
+    "tssa" : {
+        "epsilon" : 0.01,
+        "greensFunctionIterations" : 100,
+        "verbose" : false
+    }
+}

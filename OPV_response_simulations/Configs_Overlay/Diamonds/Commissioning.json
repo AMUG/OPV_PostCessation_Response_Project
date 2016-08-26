@@ -1,0 +1,13 @@
+{
+	"SIMULATION" :
+	{
+		"inputArgString"    : "-I \\\\10.129.110.62\\EMOD\\public\\input\\LKG\\Namawala\\ -O Output"
+	},
+	"CLUSTER" :
+	{
+		"NodeGroup"			: "EMOD_Simulations",
+		"BinDirectory"      : "",
+		"KernelPath"        : "\\\\10.129.110.62\\EMOD\\public\\bin\\Eradication_1_5.exe",
+		"WorkDirectory"     : "\\\\10.129.110.62\\EMOD\\home\\ES_User\\output\\SimulatorDemo\\EWS"
+	}
+}

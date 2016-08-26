@@ -1,0 +1,69 @@
+
+{ 
+    "Campaign_Name": "West Africa Outbreak Study",
+    "Use_Defaults": 1,
+    "Events": [ 
+        { 
+            "Event_Coordinator_Config": 
+            { 
+                "Event_Name": "Smoothed immunity- Jan 2008",
+                "Coverage_By_Node": [],
+                "Intervention_Config": 
+                { 
+                    "Cost_To_Consumer": 0.0, 
+                    "Prime_Acquire": 1.0,
+                    "Prime_Transmit": 1.0, 
+                    "Prime_Mortality": 1.0,
+                    "Boost_Acquire": 1.0,
+                    "Boost_Transmit": 1.0,
+                    "Boost_Mortality": 1.0,
+                    "Boost_Threshold_Acquire": 0.0,                    
+                    "Boost_Threshold_Transmit": 0.0,                    
+                    "Boost_Threshold_Mortality": 0.0,
+                    "class": "IndividualImmunityChanger"
+                },
+                "Number_Distributions": -1,
+                "Number_Repetitions": 1,
+                "Timesteps_Between_Repetitions": 0,
+                "Travel_Linked": 0,
+                "Target_Demographic": "ExplicitAgeRanges",
+                "Target_Age_Min": 0,
+                "Target_Age_Max": 100000,
+                "class": "CoverageByNodeEventCoordinator"
+            },
+            "Nodeset_Config": 
+            { 
+				"class": "NodeSetAll"
+            },
+            "Start_Day": 1,
+            "class": "CampaignEvent"
+        },                
+        { 
+            "Event_Coordinator_Config": 
+            { 
+                "Coverage": 1,
+                "Demographic_Coverage": 0.0005,
+                "Include_Arrivals": 0,
+                "Include_Departures": 0,
+                "Intervention_Config": 
+                { 
+                    "Antigen": 0,
+                    "Genome": 0,
+                    "class": "ImmunityRespectingOutbreakIndividual"
+                },
+                "Number_Distributions": -1,
+                "Number_Repetitions": 52,
+                "Timesteps_Between_Repetitions": 14,
+                "Target_Demographic": "Everyone",
+                "class": "StandardInterventionDistributionEventCoordinator"
+            },
+            "Event_Name": "Outbreak",
+            "Nodeset_Config": 
+            { 
+                "class": "NodeSetNodeList",
+                "Node_List": [ 148243655 ]
+            },
+            "Start_Day": 2,
+            "class": "CampaignEvent"
+        }  ]
+}
