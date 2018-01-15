@@ -1,0 +1,86 @@
+
+{ 
+    "EXPERIMENT": 
+    { 
+        "Name": "Polio post-cessation outbreak separatrix",
+        "Description": "Two-Dimensional Separatrix",
+        "Tags": 
+        { 
+            "separatrix": {},
+            "DTKVersion": "Eradication_20160727_58cba86c13e4bce811a8b534c0f6ec5ea44001c5.exe",
+            "Campaign_File": "campaign_1IPV.json",
+            "R0": 2.5,
+            "Infectivity_Exponential_Baseline": 0.5,
+            "Infectivity_Exponential_Delay": 90,
+            "Infectivity_Exponential_Rate": 60,
+            "Gravity_Model_Distance_Dependence": "linear",
+            "RI_Leakage_Duration": 730,
+            "RI_Leakage_Coverage": 0.025000000000000001
+        },
+        "BUILDER": 
+        { 
+            "Name": "@PolioOutbreakResponse_ExperimentBuilder",
+            "EnvironmentName": "Belegost",
+            "COMPS_PATH_USER_Resolution": "\\\\idmppfil01\\IDM\\home\\kmccarthy",
+            "param_paths": [ "META.Dual_Migration_Log", "META.Time_Since_Cessation" ],
+            "param_ranges": [ 
+                { 
+                    "min": -12,
+                    "max": -5
+                }, 
+                { 
+                    "min": 0,
+                    "max": 5
+                } ],
+            "param_names": [ "Migration Scaling Factor", "Time Since Cessation" ],
+            "RunNumbers": "[-1000]",
+            "Base_Demog_File_Dir": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\OPV_response_simulations_w_leakage\\input\\demographics\\",
+            "Base_Demog_File_Name": "WestAfrica_ProvinceLevel_demographics.json",
+            "Demographics_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructDemographicsFiles\\compiledemog.py",
+            "Base_Mig_File_Dir": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\OPV_response_simulations_w_leakage\\input\\migration\\",
+            "Base_Mig_File_Name": "gravity_model",
+            "Migration_Header_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructMigrationFiles\\createmigrationheader.py",
+            "Migration_Binary_Compile_Command": "C:\\kevmc\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\ConstructMigrationFiles\\convert_txt_to_bin.py",
+            "Migration_File_Type": "",
+            "Scheduler": "idmpphpc01",
+            "Nodegroup": "emod_a",
+            "UnzipCmd": "\\\\idmppfil01\\IDM\\home\\kmccarthy\\GenericPolioBin\\unzip.exe",
+            "CONFIG_PARAMETERS": 
+            { 
+                "Local_Migration_Filename": "local_migration\\\\WestAfrica_Provincelevel_linear_local_migration.bin",
+                "Regional_Migration_Filename": "regional_migration\\\\WestAfrica_Provincelevel_linear_regional_migration.bin",
+                "Base_Infectivity": 0.092592592592592587,
+                "Infectivity_Exponential_Baseline": 0.5,
+                "Infectivity_Exponential_Delay": 90,
+                "Infectivity_Exponential_Rate": 60
+            },
+            "CAMPAIGN_PARAMETERS": {},
+            "DEMOGRAPHICS_PARAMETERS": {},
+            "MIGRATION_PARAMETERS": {},
+            "SWEEP_PARAMETERS": 
+            { 
+                "CONFIG": {},
+                "CAMPAIGN": {},
+                "DEMOGRAPHICS": {},
+                "MIGRATION": {}
+            }
+        }
+    },
+    "SIMULATION": 
+    { 
+        "configFilePath": "C:\\Users\\kmccarthy\\active_working_dir\\AMUG_GitRepos\\OPV_PostCessation_Response_Project\\OPV_response_simulations_w_leakage\\Configs_DTK\\config.json",
+        "inputArgString": "-I $COMPS_PATH(USER)\\input\\OPV_response_WestAfrica_simulations -O output\\ -C config.json"
+    },
+    "CLUSTER": 
+    { 
+        "NodeGroup": "emod_abcd",
+        "EnvironmentName": "Belegost",
+        "BinDirectory": "",
+        "KernelPath": "$COMPS_PATH(USER)\\GenericPolioBin\\Eradication_20160727_58cba86c13e4bce811a8b534c0f6ec5ea44001c5.exe",
+        "WorkDirectory": "$COMPS_PATH(USER)\\GenericPolioOutput\\OPV_response_WestAfrica_simulations_w_leakage",
+        "Priority": "Normal",
+        "NumRetries": 3,
+        "maxCores": 1,
+        "minCores": 1
+    }
+}

@@ -1,0 +1,2199 @@
+
+{ 
+    "Metadata": 
+    { 
+        "DateCreated": "Feb 6 09:29:00 2014",
+        "Tool": "By hand",
+        "Author": "kmccarthy",
+        "IdReference": "Legacy",
+        "NodeCount": 193,
+        "Resolution": 300
+    },
+    "Defaults": 
+    { 
+        "IndividualProperties": [],
+        "IndividualAttributes": 
+        { 
+            "DESC_PrevalenceDist": "No initial prevalence",
+            "PrevalenceDistributionFlag": 0,
+            "PrevalenceDistribution1": 0,
+            "PrevalenceDistribution2": 0,
+            "DESC_ImmunityDist": "No initial immunity",
+            "ImmunityDistributionFlag": 0,
+            "ImmunityDistribution1": 0,
+            "ImmunityDistribution2": 0,
+            "DESC_RiskDist": "No risk heterogeneity",
+            "RiskDistributionFlag": 0,
+            "RiskDistribution1": 1,
+            "RiskDistribution2": 0,
+            "DESC_MigrationDist": "No migration heterogeneity",
+            "MigrationHeterogeneityDistributionFlag": 0,
+            "MigrationHeterogeneityDistribution1": 1,
+            "MigrationHeterogeneityDistribution2": 0,
+            "DESC_AgeDist": "Box from 0 to 5",
+            "AgeDistribution": 
+            { 
+                "NumDistributionAxes": 0,
+                "ResultUnits": "years",
+                "ResultScaleFactor": 365,
+                "ResultValues": [ 0, 1, 2, 3, 4, 5 ],
+                "DistributionValues": [ 0, 0.214, 0.42099999999999999, 0.61799999999999999, 0.81200000000000006, 1 ]
+            },
+            "DESC_MortDist": "Realistic infant and toddler mortality, immediate death upon turning 5",
+            "MortalityDistribution": 
+            { 
+                "NumDistributionAxes": 2,
+                "AxisNames": [ "gender", "age" ],
+                "AxisUnits": [ "male=0,female=1", "years" ],
+                "AxisScaleFactors": [ 1, 365 ],
+                "NumPopulationGroups": [ 2, 8 ],
+                "PopulationGroups": 
+                [
+                    [ 0, 1 ], 
+                    [ 0, 0.001, 0.083299999999999999, 0.083400000000000002, 0.999, 1, 5, 5.0010000000000003 ]
+                ],
+                "ResultUnits": "annual deaths per 1000 individuals",
+                "ResultScaleFactor": 2.7397260273972604e-06,
+                "ResultValues": 
+                [
+                    [ 0, 584, 584, 39, 39, 23, 23, 100000000 ], 
+                    [ 0, 584, 584, 39, 39, 23, 23, 100000000 ]
+                ]
+            }
+        },
+        "NodeAttributes": 
+        { 
+            "Airport": 0,
+            "Altitude": 1,
+            "BirthRate": 0.00067000000000000002,
+            "Region": 1,
+            "Seaport": 0,
+            "AbovePoverty": 0.5,
+            "Urban": 1
+        }
+    },
+    "Nodes": [ 
+        { 
+            "AdminID": "Africa:NIGER:TAHOUA",
+            "NodeID": 145884390,
+            "HierarchyID": 288962,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.416666666666657,
+                "Longitude": 5.5,
+                "InitialPopulation": 2703394
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:NASARAWA",
+            "NodeID": 148047008,
+            "HierarchyID": 288975,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.5833333333333286,
+                "Longitude": 8.25,
+                "InitialPopulation": 2085085
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:PLATEAU",
+            "NodeID": 143590540,
+            "HierarchyID": 288815,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.9166666666666572,
+                "Longitude": 2.5833333333333144,
+                "InitialPopulation": 577171
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:BOKE",
+            "NodeID": 130548925,
+            "HierarchyID": 288872,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11,
+                "Longitude": -14,
+                "InitialPopulation": 1082153
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:DAKAR",
+            "NodeID": 127861993,
+            "HierarchyID": 289987,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.666666666666657,
+                "Longitude": -17.416666666666686,
+                "InitialPopulation": 2869329
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:VOLTA",
+            "NodeID": 141952139,
+            "HierarchyID": 290087,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": 0.5,
+                "InitialPopulation": 2080135
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:EASTERN",
+            "NodeID": 141165699,
+            "HierarchyID": 290088,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.1666666666666572,
+                "Longitude": -0.5,
+                "InitialPopulation": 2625059
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:CENTRAL",
+            "NodeID": 140706938,
+            "HierarchyID": 290089,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.4166666666666572,
+                "Longitude": -1.0833333333333428,
+                "InitialPopulation": 2174058
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:ASHANTI",
+            "NodeID": 140248201,
+            "HierarchyID": 290090,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.6666666666666572,
+                "Longitude": -1.6666666666666856,
+                "InitialPopulation": 4771130
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:BRONG AHAFO",
+            "NodeID": 139920531,
+            "HierarchyID": 290091,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.5,
+                "Longitude": -2.0833333333333428,
+                "InitialPopulation": 2219400
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:UPPER WEST",
+            "NodeID": 139592885,
+            "HierarchyID": 290092,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.333333333333329,
+                "Longitude": -2.5,
+                "InitialPopulation": 676800
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:GREATER ACCRA",
+            "NodeID": 141362300,
+            "HierarchyID": 290093,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.5833333333333286,
+                "Longitude": -0.25,
+                "InitialPopulation": 3760877
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:CONAKRY",
+            "NodeID": 130811052,
+            "HierarchyID": 290094,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.5833333333333286,
+                "Longitude": -13.666666666666686,
+                "InitialPopulation": 1460543
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:HODH ECH CHARGUI",
+            "NodeID": 135660794,
+            "HierarchyID": 290984,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.083333333333329,
+                "Longitude": -7.5,
+                "InitialPopulation": 399200
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:MAMOU",
+            "NodeID": 131925177,
+            "HierarchyID": 290110,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.666666666666657,
+                "Longitude": -12.25,
+                "InitialPopulation": 837677
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:N'ZEREKORE",
+            "NodeID": 134153372,
+            "HierarchyID": 290111,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.25,
+                "Longitude": -9.4166666666666856,
+                "InitialPopulation": 2335722
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:BRAKNA",
+            "NodeID": 130680066,
+            "HierarchyID": 291023,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.75,
+                "Longitude": -13.833333333333343,
+                "InitialPopulation": 343220
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:TAGANT",
+            "NodeID": 132318481,
+            "HierarchyID": 291024,
+            "NodeAttributes": 
+            { 
+                "Latitude": 18,
+                "Longitude": -11.75,
+                "InitialPopulation": 109755
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:INCHIRI",
+            "NodeID": 129631528,
+            "HierarchyID": 290421,
+            "NodeAttributes": 
+            { 
+                "Latitude": 19.916666666666657,
+                "Longitude": -15.166666666666686,
+                "InitialPopulation": 16489
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:ATACORA",
+            "NodeID": 142673079,
+            "HierarchyID": 289563,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.5,
+                "Longitude": 1.4166666666666572,
+                "InitialPopulation": 753223
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS2",
+            "NodeID": 153945202,
+            "HierarchyID": 289580,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.75,
+                "Longitude": 15.75,
+                "InitialPopulation": 781103
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS1",
+            "NodeID": 155649134,
+            "HierarchyID": 289593,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.4166666666666572,
+                "Longitude": 17.916666666666657,
+                "InitialPopulation": 627599
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SIERRA LEONE:WESTERN AREA",
+            "NodeID": 131138718,
+            "HierarchyID": 289761,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.4166666666666572,
+                "Longitude": -13.25,
+                "InitialPopulation": 1059824
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:ST. LOUIS",
+            "NodeID": 130024695,
+            "HierarchyID": 289797,
+            "NodeAttributes": 
+            { 
+                "Latitude": 15.833333333333329,
+                "Longitude": -14.666666666666686,
+                "InitialPopulation": 1526617
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:UPPER EAST",
+            "NodeID": 140969147,
+            "HierarchyID": 290085,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.833333333333329,
+                "Longitude": -0.75,
+                "InitialPopulation": 1051776
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:WESTERN",
+            "NodeID": 139789435,
+            "HierarchyID": 290086,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.5,
+                "Longitude": -2.25,
+                "InitialPopulation": 2248112
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:FARANAH",
+            "NodeID": 133170355,
+            "HierarchyID": 290104,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.166666666666657,
+                "Longitude": -10.666666666666686,
+                "InitialPopulation": 818044
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:KINDIA",
+            "NodeID": 131204272,
+            "HierarchyID": 290105,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.9166666666666572,
+                "Longitude": -13.166666666666686,
+                "InitialPopulation": 1678925
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:KANKAN",
+            "NodeID": 134218936,
+            "HierarchyID": 290106,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.583333333333329,
+                "Longitude": -9.3333333333333428,
+                "InitialPopulation": 1541257
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:TRARZA",
+            "NodeID": 129500422,
+            "HierarchyID": 291037,
+            "NodeAttributes": 
+            { 
+                "Latitude": 17.083333333333329,
+                "Longitude": -15.333333333333343,
+                "InitialPopulation": 394368
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:FATICK",
+            "NodeID": 128713955,
+            "HierarchyID": 290448,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.166666666666657,
+                "Longitude": -16.333333333333343,
+                "InitialPopulation": 759842
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:LOFA",
+            "NodeID": 133694617,
+            "HierarchyID": 290543,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8,
+                "Longitude": -10,
+                "InitialPopulation": 330255
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GHANA:NORTHERN",
+            "NodeID": 141034666,
+            "HierarchyID": 289980,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.4166666666666572,
+                "Longitude": -0.66666666666668561,
+                "InitialPopulation": 2439829
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:KAOLACK",
+            "NodeID": 129172705,
+            "HierarchyID": 290570,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14,
+                "Longitude": -15.75,
+                "InitialPopulation": 1328206
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:KAYES",
+            "NodeID": 133367010,
+            "HierarchyID": 290899,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.083333333333329,
+                "Longitude": -10.416666666666686,
+                "InitialPopulation": 1918448
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:ZIGUINCHOR",
+            "NodeID": 128713937,
+            "HierarchyID": 290447,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.666666666666657,
+                "Longitude": -16.333333333333343,
+                "InitialPopulation": 516652
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:GBARPOLU",
+            "NodeID": 133366928,
+            "HierarchyID": 290542,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.25,
+                "Longitude": -10.416666666666686,
+                "InitialPopulation": 82048
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:GRAND BASSA",
+            "NodeID": 133825665,
+            "HierarchyID": 290545,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6,
+                "Longitude": -9.8333333333333428,
+                "InitialPopulation": 317181
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:GRAND GEDEH",
+            "NodeID": 135201916,
+            "HierarchyID": 290547,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.5833333333333286,
+                "Longitude": -8.0833333333333428,
+                "InitialPopulation": 248700
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:MONTSERRADO",
+            "NodeID": 133104773,
+            "HierarchyID": 290549,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.3333333333333286,
+                "Longitude": -10.75,
+                "InitialPopulation": 1445672
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:MARYILAND",
+            "NodeID": 135332977,
+            "HierarchyID": 290550,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.6666666666666572,
+                "Longitude": -7.9166666666666856,
+                "InitialPopulation": 187238
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:BONG",
+            "NodeID": 133891211,
+            "HierarchyID": 290552,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": -9.75,
+                "InitialPopulation": 434031
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:NIMBA",
+            "NodeID": 134677645,
+            "HierarchyID": 290555,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7,
+                "Longitude": -8.75,
+                "InitialPopulation": 540858
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:GRAND CAPE MOUNT",
+            "NodeID": 132777101,
+            "HierarchyID": 290558,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7,
+                "Longitude": -11.166666666666686,
+                "InitialPopulation": 145891
+            }
+        }, 
+        { 
+            "AdminID": "Africa:LIBERIA:SINOE",
+            "NodeID": 134481016,
+            "HierarchyID": 290559,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.25,
+                "Longitude": -9,
+                "InitialPopulation": 90299
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:DIOURBEL",
+            "NodeID": 128910570,
+            "HierarchyID": 290567,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.75,
+                "Longitude": -16.083333333333343,
+                "InitialPopulation": 1489178
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:KOLDA",
+            "NodeID": 129762515,
+            "HierarchyID": 290568,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.833333333333329,
+                "Longitude": -15,
+                "InitialPopulation": 1051986
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:LACS",
+            "NodeID": 137430155,
+            "HierarchyID": 289739,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": -5.25,
+                "InitialPopulation": 644055
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:SAVANES",
+            "NodeID": 137036973,
+            "HierarchyID": 289756,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.6666666666666572,
+                "Longitude": -5.75,
+                "InitialPopulation": 1307562
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:LOUGA",
+            "NodeID": 128976114,
+            "HierarchyID": 289795,
+            "NodeAttributes": 
+            { 
+                "Latitude": 15.416666666666657,
+                "Longitude": -16,
+                "InitialPopulation": 856866
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:TAMBACOUNDA",
+            "NodeID": 131138783,
+            "HierarchyID": 289796,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.833333333333329,
+                "Longitude": -13.25,
+                "InitialPopulation": 728494
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:TIRIS ZEMMOUR",
+            "NodeID": 132187468,
+            "HierarchyID": 290939,
+            "NodeAttributes": 
+            { 
+                "Latitude": 22.916666666666657,
+                "Longitude": -11.916666666666686,
+                "InitialPopulation": 58749
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:NOUAKCHOTT",
+            "NodeID": 128976145,
+            "HierarchyID": 290965,
+            "NodeAttributes": 
+            { 
+                "Latitude": 18,
+                "Longitude": -16,
+                "InitialPopulation": 821569
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:PLATEAU",
+            "NodeID": 148767914,
+            "HierarchyID": 290694,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.4166666666666572,
+                "Longitude": 9.1666666666666572,
+                "InitialPopulation": 3601732
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:TANDJILE",
+            "NodeID": 154207401,
+            "HierarchyID": 290716,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.3333333333333286,
+                "Longitude": 16.083333333333314,
+                "InitialPopulation": 715430
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:MAYO KEBBI EST",
+            "NodeID": 153617586,
+            "HierarchyID": 290717,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.083333333333329,
+                "Longitude": 15.333333333333314,
+                "InitialPopulation": 738010
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:MAYO KEBBI OUEST",
+            "NodeID": 153158825,
+            "HierarchyID": 290718,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.3333333333333286,
+                "Longitude": 14.75,
+                "InitialPopulation": 657336
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:MOYEN CHARI",
+            "NodeID": 156107943,
+            "HierarchyID": 290720,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.1666666666666572,
+                "Longitude": 18.5,
+                "InitialPopulation": 677454
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:KANEM",
+            "NodeID": 154010850,
+            "HierarchyID": 290721,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.083333333333329,
+                "Longitude": 15.833333333333314,
+                "InitialPopulation": 649586
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:LOGONE OCCIDENTAL",
+            "NodeID": 154141858,
+            "HierarchyID": 290722,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.75,
+                "Longitude": 16,
+                "InitialPopulation": 571402
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:BATHA",
+            "NodeID": 156239068,
+            "HierarchyID": 290724,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.583333333333329,
+                "Longitude": 18.666666666666657,
+                "InitialPopulation": 553099
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:N'DJAMENA",
+            "NodeID": 153355465,
+            "HierarchyID": 290725,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12,
+                "Longitude": 15,
+                "InitialPopulation": 1291765
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:HADJAR LAMIS",
+            "NodeID": 154076368,
+            "HierarchyID": 290726,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.583333333333329,
+                "Longitude": 15.916666666666657,
+                "InitialPopulation": 593426
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:BORKOU-TIBESTI",
+            "NodeID": 157943051,
+            "HierarchyID": 290727,
+            "NodeAttributes": 
+            { 
+                "Latitude": 17.5,
+                "Longitude": 20.833333333333314,
+                "InitialPopulation": 293625
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:CHARI BAGUIRMI",
+            "NodeID": 154469565,
+            "HierarchyID": 290728,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11,
+                "Longitude": 16.416666666666657,
+                "InitialPopulation": 444318
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:OUADDAI",
+            "NodeID": 158336214,
+            "HierarchyID": 290734,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.083333333333329,
+                "Longitude": 21.333333333333314,
+                "InitialPopulation": 1123845
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:LAC",
+            "NodeID": 153093339,
+            "HierarchyID": 290735,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.5,
+                "Longitude": 14.666666666666657,
+                "InitialPopulation": 472575
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:WADI FIRA",
+            "NodeID": 158598378,
+            "HierarchyID": 290737,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.75,
+                "Longitude": 21.666666666666657,
+                "InitialPopulation": 538933
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:SALAMAT",
+            "NodeID": 157549757,
+            "HierarchyID": 290738,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11,
+                "Longitude": 20.333333333333314,
+                "InitialPopulation": 324078
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:LOGONE ORIENTAL",
+            "NodeID": 154469533,
+            "HierarchyID": 290741,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.3333333333333286,
+                "Longitude": 16.416666666666657,
+                "InitialPopulation": 969960
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:KARA",
+            "NodeID": 142279852,
+            "HierarchyID": 290746,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.5833333333333286,
+                "Longitude": 0.91666666666665719,
+                "InitialPopulation": 803077
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:MARITIME",
+            "NodeID": 142541956,
+            "HierarchyID": 290747,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.25,
+                "Longitude": 1.25,
+                "InitialPopulation": 2197818
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:PLATEAUX",
+            "NodeID": 142345361,
+            "HierarchyID": 290748,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.3333333333333286,
+                "Longitude": 1,
+                "InitialPopulation": 1405727
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:SAVANES",
+            "NodeID": 141755577,
+            "HierarchyID": 290752,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.666666666666657,
+                "Longitude": 0.25,
+                "InitialPopulation": 831083
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:LOMT",
+            "NodeID": 142476419,
+            "HierarchyID": 290753,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.1666666666666572,
+                "Longitude": 1.1666666666666572,
+                "InitialPopulation": 400351
+            }
+        }, 
+        { 
+            "AdminID": "Africa:TOGO:CENTRALE",
+            "NodeID": 142410913,
+            "HierarchyID": 290754,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.6666666666666572,
+                "Longitude": 1.0833333333333144,
+                "InitialPopulation": 627727
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:SIKASSO",
+            "NodeID": 136643779,
+            "HierarchyID": 290906,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.5,
+                "Longitude": -6.25,
+                "InitialPopulation": 2520382
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:ASSABA",
+            "NodeID": 132383998,
+            "HierarchyID": 290940,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.416666666666657,
+                "Longitude": -11.666666666666686,
+                "InitialPopulation": 342574
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:NORD",
+            "NodeID": 139789529,
+            "HierarchyID": 288755,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.333333333333329,
+                "Longitude": -2.25,
+                "InitialPopulation": 1290825
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:AGADEZ",
+            "NodeID": 147916045,
+            "HierarchyID": 288958,
+            "NodeAttributes": 
+            { 
+                "Latitude": 17.666666666666657,
+                "Longitude": 8.0833333333333144,
+                "InitialPopulation": 519056
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:DIFFA",
+            "NodeID": 151192798,
+            "HierarchyID": 288959,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.75,
+                "Longitude": 12.25,
+                "InitialPopulation": 427096
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:MARADI",
+            "NodeID": 147326174,
+            "HierarchyID": 288960,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.75,
+                "Longitude": 7.3333333333333144,
+                "InitialPopulation": 3219063
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:DOSSO",
+            "NodeID": 144311509,
+            "HierarchyID": 288961,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13,
+                "Longitude": 3.5,
+                "InitialPopulation": 2142099
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KEBBI",
+            "NodeID": 145097927,
+            "HierarchyID": 288963,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.833333333333329,
+                "Longitude": 4.5,
+                "InitialPopulation": 3634537
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ABIA",
+            "NodeID": 147391609,
+            "HierarchyID": 288964,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.3333333333333286,
+                "Longitude": 7.4166666666666572,
+                "InitialPopulation": 3281828
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ADAMAWA",
+            "NodeID": 151389356,
+            "HierarchyID": 288965,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.5833333333333286,
+                "Longitude": 12.5,
+                "InitialPopulation": 3521653
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:AKWA IBOM",
+            "NodeID": 147719283,
+            "HierarchyID": 288966,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.8333333333333286,
+                "Longitude": 7.8333333333333144,
+                "InitialPopulation": 4291576
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:TILLABTRI",
+            "NodeID": 143131870,
+            "HierarchyID": 288974,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.75,
+                "Longitude": 2,
+                "InitialPopulation": 3981964
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:TARABA",
+            "NodeID": 150013082,
+            "HierarchyID": 288976,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.0833333333333286,
+                "Longitude": 10.75,
+                "InitialPopulation": 2565821
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:YOBE",
+            "NodeID": 150406347,
+            "HierarchyID": 288977,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.166666666666657,
+                "Longitude": 11.25,
+                "InitialPopulation": 2634483
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ZAMFARA",
+            "NodeID": 146539724,
+            "HierarchyID": 288978,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.25,
+                "Longitude": 6.3333333333333144,
+                "InitialPopulation": 3676848
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KOGI",
+            "NodeID": 146801812,
+            "HierarchyID": 288979,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.5833333333333286,
+                "Longitude": 6.6666666666666572,
+                "InitialPopulation": 3734029
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:LAGOS",
+            "NodeID": 144180359,
+            "HierarchyID": 288981,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": 3.3333333333333144,
+                "InitialPopulation": 10804408
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:NIGER",
+            "NodeID": 146212013,
+            "HierarchyID": 288982,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.6666666666666572,
+                "Longitude": 5.9166666666666572,
+                "InitialPopulation": 4457967
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:BAUCHI",
+            "NodeID": 149423292,
+            "HierarchyID": 288983,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.916666666666657,
+                "Longitude": 10,
+                "InitialPopulation": 5212131
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KANO",
+            "NodeID": 148243655,
+            "HierarchyID": 288984,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.833333333333329,
+                "Longitude": 8.5,
+                "InitialPopulation": 10806072
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KADUNA",
+            "NodeID": 147653814,
+            "HierarchyID": 288985,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.416666666666657,
+                "Longitude": 7.75,
+                "InitialPopulation": 6943495
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:JIGAWA",
+            "NodeID": 148964555,
+            "HierarchyID": 288986,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.166666666666657,
+                "Longitude": 9.4166666666666572,
+                "InitialPopulation": 4908596
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:IMO",
+            "NodeID": 147129468,
+            "HierarchyID": 288987,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.5833333333333286,
+                "Longitude": 7.0833333333333144,
+                "InitialPopulation": 4367424
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:SOKOTO",
+            "NodeID": 145687766,
+            "HierarchyID": 288989,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.083333333333329,
+                "Longitude": 5.25,
+                "InitialPopulation": 4172967
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:BAYELSA",
+            "NodeID": 146343027,
+            "HierarchyID": 288990,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.8333333333333286,
+                "Longitude": 6.0833333333333144,
+                "InitialPopulation": 1864499
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:OYO",
+            "NodeID": 144508054,
+            "HierarchyID": 288991,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.75,
+                "Longitude": 3.75,
+                "InitialPopulation": 6506793
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:OSUN",
+            "NodeID": 145097876,
+            "HierarchyID": 288992,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.5833333333333286,
+                "Longitude": 4.5,
+                "InitialPopulation": 3988494
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:RIVERS",
+            "NodeID": 146998387,
+            "HierarchyID": 288993,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.8333333333333286,
+                "Longitude": 6.9166666666666572,
+                "InitialPopulation": 5312463
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ONDO",
+            "NodeID": 145622157,
+            "HierarchyID": 288994,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7,
+                "Longitude": 5.1666666666666572,
+                "InitialPopulation": 3914968
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:OGUN",
+            "NodeID": 144245899,
+            "HierarchyID": 288995,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": 3.4166666666666572,
+                "InitialPopulation": 4355629
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ENUGU",
+            "NodeID": 147391623,
+            "HierarchyID": 288996,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": 7.4166666666666572,
+                "InitialPopulation": 3720296
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KATSINA",
+            "NodeID": 147588302,
+            "HierarchyID": 288997,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.416666666666657,
+                "Longitude": 7.6666666666666572,
+                "InitialPopulation": 6722300
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:EKITI",
+            "NodeID": 145622165,
+            "HierarchyID": 289003,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.6666666666666572,
+                "Longitude": 5.1666666666666572,
+                "InitialPopulation": 2718637
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:EDO",
+            "NodeID": 146211976,
+            "HierarchyID": 289004,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5833333333333286,
+                "Longitude": 5.9166666666666572,
+                "InitialPopulation": 3747974
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:EBONYI",
+            "NodeID": 147784835,
+            "HierarchyID": 289009,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.1666666666666572,
+                "Longitude": 7.9166666666666572,
+                "InitialPopulation": 2419520
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:DELTA",
+            "NodeID": 146277501,
+            "HierarchyID": 289010,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.6666666666666572,
+                "Longitude": 6,
+                "InitialPopulation": 4570309
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:CROSS RIVER",
+            "NodeID": 148243582,
+            "HierarchyID": 289011,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.75,
+                "Longitude": 8.5,
+                "InitialPopulation": 3192403
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:BORNO",
+            "NodeID": 151913670,
+            "HierarchyID": 289012,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.75,
+                "Longitude": 13.166666666666657,
+                "InitialPopulation": 4728638
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:BENUE",
+            "NodeID": 148374672,
+            "HierarchyID": 289013,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.25,
+                "Longitude": 8.6666666666666572,
+                "InitialPopulation": 4752131
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:ANAMBRA",
+            "NodeID": 146998402,
+            "HierarchyID": 289014,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.0833333333333286,
+                "Longitude": 6.9166666666666572,
+                "InitialPopulation": 4823059
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:ADRAR",
+            "NodeID": 131532078,
+            "HierarchyID": 290945,
+            "NodeAttributes": 
+            { 
+                "Latitude": 20.416666666666657,
+                "Longitude": -12.75,
+                "InitialPopulation": 99284
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CENTRE-SUD",
+            "NodeID": 140575940,
+            "HierarchyID": 289505,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.583333333333329,
+                "Longitude": -1.25,
+                "InitialPopulation": 681060
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:FCT, ABUJA",
+            "NodeID": 147260581,
+            "HierarchyID": 288925,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9,
+                "Longitude": 7.25,
+                "InitialPopulation": 1596817
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:MOPTI",
+            "NodeID": 138609894,
+            "HierarchyID": 290897,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.416666666666657,
+                "Longitude": -3.75,
+                "InitialPopulation": 1954928
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:GAO",
+            "NodeID": 141755644,
+            "HierarchyID": 290898,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.25,
+                "Longitude": 0.25,
+                "InitialPopulation": 519300
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:BAMAKO",
+            "NodeID": 135267536,
+            "HierarchyID": 290901,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.583333333333329,
+                "Longitude": -8,
+                "InitialPopulation": 1524932
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CENTRE-EST",
+            "NodeID": 141296837,
+            "HierarchyID": 289525,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.666666666666657,
+                "Longitude": -0.33333333333334281,
+                "InitialPopulation": 1252975
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CENTRE-NORD",
+            "NodeID": 140707031,
+            "HierarchyID": 289526,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.166666666666657,
+                "Longitude": -1.0833333333333428,
+                "InitialPopulation": 1295685
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:KWARA",
+            "NodeID": 145163424,
+            "HierarchyID": 288980,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.5833333333333286,
+                "Longitude": 4.5833333333333144,
+                "InitialPopulation": 2695360
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:SAHEL",
+            "NodeID": 141165793,
+            "HierarchyID": 289527,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14,
+                "Longitude": -0.5,
+                "InitialPopulation": 1043632
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:SUD-OUEST",
+            "NodeID": 139003064,
+            "HierarchyID": 289528,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.583333333333329,
+                "Longitude": -3.25,
+                "InitialPopulation": 632145
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS4",
+            "NodeID": 157287553,
+            "HierarchyID": 289530,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6,
+                "Longitude": 20,
+                "InitialPopulation": 570941
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:PLATEAU CENTRAL",
+            "NodeID": 140641486,
+            "HierarchyID": 289531,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.416666666666657,
+                "Longitude": -1.1666666666666856,
+                "InitialPopulation": 744195
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CENTRE",
+            "NodeID": 140313805,
+            "HierarchyID": 289532,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.333333333333329,
+                "Longitude": -1.5833333333333428,
+                "InitialPopulation": 2141682
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:BOUCLE DU MOUHOUN",
+            "NodeID": 138740943,
+            "HierarchyID": 289533,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.5,
+                "Longitude": -3.5833333333333428,
+                "InitialPopulation": 1563270
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CENTRE-OUEST",
+            "NodeID": 139723976,
+            "HierarchyID": 289536,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.916666666666657,
+                "Longitude": -2.3333333333333428,
+                "InitialPopulation": 1333208
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:CASCADES",
+            "NodeID": 137823414,
+            "HierarchyID": 289539,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.416666666666657,
+                "Longitude": -4.75,
+                "InitialPopulation": 583244
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:EST",
+            "NodeID": 142083277,
+            "HierarchyID": 289541,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.333333333333329,
+                "Longitude": 0.66666666666665719,
+                "InitialPopulation": 1277444
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS5",
+            "NodeID": 158794907,
+            "HierarchyID": 289543,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.1666666666666572,
+                "Longitude": 21.916666666666657,
+                "InitialPopulation": 205959
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BURKINA FASO:HAUTS BASSINS",
+            "NodeID": 138151104,
+            "HierarchyID": 289544,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.25,
+                "Longitude": -4.3333333333333428,
+                "InitialPopulation": 1666168
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS6",
+            "NodeID": 159188083,
+            "HierarchyID": 289547,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.8333333333333286,
+                "Longitude": 22.416666666666657,
+                "InitialPopulation": 503985
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:ATLANTIQUE",
+            "NodeID": 143328391,
+            "HierarchyID": 289565,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": 2.25,
+                "InitialPopulation": 1233902
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:ZOU",
+            "NodeID": 143197327,
+            "HierarchyID": 289566,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.1666666666666572,
+                "Longitude": 2.0833333333333144,
+                "InitialPopulation": 813433
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:BORGOU",
+            "NodeID": 143721646,
+            "HierarchyID": 289569,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.75,
+                "Longitude": 2.75,
+                "InitialPopulation": 1057569
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:MONO",
+            "NodeID": 142935175,
+            "HierarchyID": 289570,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": 1.75,
+                "InitialPopulation": 476390
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:LITTORAL",
+            "NodeID": 143393925,
+            "HierarchyID": 289571,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.3333333333333286,
+                "Longitude": 2.3333333333333144,
+                "InitialPopulation": 900707
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS7",
+            "NodeID": 156107885,
+            "HierarchyID": 289572,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.3333333333333286,
+                "Longitude": 18.5,
+                "InitialPopulation": 714176
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:DONGA",
+            "NodeID": 142869675,
+            "HierarchyID": 289573,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.5,
+                "Longitude": 1.6666666666666572,
+                "InitialPopulation": 478423
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:OUTMT",
+            "NodeID": 143524999,
+            "HierarchyID": 289574,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": 2.5,
+                "InitialPopulation": 1046070
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CENTRAL AFRICAN REPUBLIC:RS3",
+            "NodeID": 154797195,
+            "HierarchyID": 289576,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": 16.833333333333314,
+                "InitialPopulation": 890838
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:COUFFO",
+            "NodeID": 142935180,
+            "HierarchyID": 289577,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.9166666666666572,
+                "Longitude": 1.75,
+                "InitialPopulation": 726652
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:COLLINES",
+            "NodeID": 143262874,
+            "HierarchyID": 289578,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.0833333333333286,
+                "Longitude": 2.1666666666666572,
+                "InitialPopulation": 749050
+            }
+        }, 
+        { 
+            "AdminID": "Africa:BENIN:ALIBORI",
+            "NodeID": 143787200,
+            "HierarchyID": 289581,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.25,
+                "Longitude": 2.8333333333333144,
+                "InitialPopulation": 744634
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGER:ZINDER",
+            "NodeID": 148702430,
+            "HierarchyID": 289163,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.75,
+                "Longitude": 9.0833333333333144,
+                "InitialPopulation": 2764452
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:N'ZI COMOT",
+            "NodeID": 138216588,
+            "HierarchyID": 289730,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.9166666666666572,
+                "Longitude": -4.25,
+                "InitialPopulation": 977218
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:FROMAGER",
+            "NodeID": 136905859,
+            "HierarchyID": 289733,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.1666666666666572,
+                "Longitude": -5.9166666666666856,
+                "InitialPopulation": 729470
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:ABIDJAN",
+            "NodeID": 138347641,
+            "HierarchyID": 289734,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.3333333333333286,
+                "Longitude": -4.0833333333333428,
+                "InitialPopulation": 3908886
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:AGNEBY",
+            "NodeID": 138347649,
+            "HierarchyID": 289735,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6,
+                "Longitude": -4.0833333333333428,
+                "InitialPopulation": 774145
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:BAFING",
+            "NodeID": 135529629,
+            "HierarchyID": 289736,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.3333333333333286,
+                "Longitude": -7.6666666666666856,
+                "InitialPopulation": 159117
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:BAS CAVALLY",
+            "NodeID": 136250489,
+            "HierarchyID": 289738,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.3333333333333286,
+                "Longitude": -6.75,
+                "InitialPopulation": 489513
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:VALLTE DU BANDAMAN",
+            "NodeID": 137561239,
+            "HierarchyID": 289740,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.8333333333333286,
+                "Longitude": -5.0833333333333428,
+                "InitialPopulation": 1471796
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:MONTAGNES",
+            "NodeID": 135398544,
+            "HierarchyID": 289741,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.25,
+                "Longitude": -7.8333333333333428,
+                "InitialPopulation": 1196518
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:DENGUTLT",
+            "NodeID": 135660716,
+            "HierarchyID": 289742,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.5833333333333286,
+                "Longitude": -7.5,
+                "InitialPopulation": 287671
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:ZANZAN",
+            "NodeID": 139003036,
+            "HierarchyID": 289743,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.25,
+                "Longitude": -3.25,
+                "InitialPopulation": 905278
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:SUD BANDAMA",
+            "NodeID": 137299070,
+            "HierarchyID": 289745,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.75,
+                "Longitude": -5.4166666666666856,
+                "InitialPopulation": 877976
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:WORODOUGOU",
+            "NodeID": 136512668,
+            "HierarchyID": 289746,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.25,
+                "Longitude": -6.4166666666666856,
+                "InitialPopulation": 456872
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:SUD COMOT",
+            "NodeID": 138937466,
+            "HierarchyID": 289753,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.4166666666666572,
+                "Longitude": -3.3333333333333428,
+                "InitialPopulation": 713974
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:MOYEN CAVALLY",
+            "NodeID": 135529607,
+            "HierarchyID": 289755,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.5,
+                "Longitude": -7.6666666666666856,
+                "InitialPopulation": 470200
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:LAGUNES",
+            "NodeID": 137954428,
+            "HierarchyID": 289757,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.5833333333333286,
+                "Longitude": -4.5833333333333428,
+                "InitialPopulation": 733944
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:HAUT SASSANDRA",
+            "NodeID": 136381580,
+            "HierarchyID": 289765,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.9166666666666572,
+                "Longitude": -6.5833333333333428,
+                "InitialPopulation": 1270835
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:MARAHOUT",
+            "NodeID": 136905868,
+            "HierarchyID": 289767,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.9166666666666572,
+                "Longitude": -5.9166666666666856,
+                "InitialPopulation": 697549
+            }
+        }, 
+        { 
+            "AdminID": "Africa:Ivory Coast:MOYEN COMOT",
+            "NodeID": 138806409,
+            "HierarchyID": 289768,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.6666666666666572,
+                "Longitude": -3.5,
+                "InitialPopulation": 527523
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:STGOU",
+            "NodeID": 137037019,
+            "HierarchyID": 290905,
+            "NodeAttributes": 
+            { 
+                "Latitude": 13.5,
+                "Longitude": -5.75,
+                "InitialPopulation": 2251847
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:KOULIKORO",
+            "NodeID": 135333074,
+            "HierarchyID": 290907,
+            "NodeAttributes": 
+            { 
+                "Latitude": 12.75,
+                "Longitude": -7.9166666666666856,
+                "InitialPopulation": 5644953
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:EST",
+            "NodeID": 152568938,
+            "HierarchyID": 289772,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.0833333333333286,
+                "Longitude": 14,
+                "InitialPopulation": 1016191
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:EXTREME NORD",
+            "NodeID": 152896697,
+            "HierarchyID": 289776,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.666666666666657,
+                "Longitude": 14.416666666666657,
+                "InitialPopulation": 3442870
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:NORD",
+            "NodeID": 152306855,
+            "HierarchyID": 289781,
+            "NodeAttributes": 
+            { 
+                "Latitude": 9.1666666666666572,
+                "Longitude": 13.666666666666657,
+                "InitialPopulation": 1608587
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:NORD OUEST",
+            "NodeID": 149685379,
+            "HierarchyID": 289785,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.1666666666666572,
+                "Longitude": 10.333333333333314,
+                "InitialPopulation": 2435985
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:OUEST",
+            "NodeID": 149750906,
+            "HierarchyID": 289786,
+            "NodeAttributes": 
+            { 
+                "Latitude": 5.4166666666666572,
+                "Longitude": 10.416666666666657,
+                "InitialPopulation": 2198103
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:ADAMAOUA",
+            "NodeID": 151979147,
+            "HierarchyID": 289788,
+            "NodeAttributes": 
+            { 
+                "Latitude": 6.8333333333333286,
+                "Longitude": 13.25,
+                "InitialPopulation": 941343
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:SUD",
+            "NodeID": 150471771,
+            "HierarchyID": 289791,
+            "NodeAttributes": 
+            { 
+                "Latitude": 2.8333333333333286,
+                "Longitude": 11.333333333333314,
+                "InitialPopulation": 763269
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:SUD OUEST",
+            "NodeID": 148964467,
+            "HierarchyID": 289794,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.8333333333333286,
+                "Longitude": 9.4166666666666572,
+                "InitialPopulation": 1935105
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:LITTORAL",
+            "NodeID": 149226603,
+            "HierarchyID": 289799,
+            "NodeAttributes": 
+            { 
+                "Latitude": 4.1666666666666572,
+                "Longitude": 9.75,
+                "InitialPopulation": 2803874
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SIERRA LEONE:SOUTHERN",
+            "NodeID": 132121750,
+            "HierarchyID": 289800,
+            "NodeAttributes": 
+            { 
+                "Latitude": 7.75,
+                "Longitude": -12,
+                "InitialPopulation": 1270560
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CAMEROON:CENTRE",
+            "NodeID": 150602856,
+            "HierarchyID": 289801,
+            "NodeAttributes": 
+            { 
+                "Latitude": 3.9166666666666572,
+                "Longitude": 11.5,
+                "InitialPopulation": 3250688
+            }
+        }, 
+        { 
+            "AdminID": "Africa:NIGERIA:GOMBE",
+            "NodeID": 150340788,
+            "HierarchyID": 289844,
+            "NodeAttributes": 
+            { 
+                "Latitude": 10.25,
+                "Longitude": 11.166666666666657,
+                "InitialPopulation": 2656949
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:TOMBOUCTOU",
+            "NodeID": 138937597,
+            "HierarchyID": 290913,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.333333333333329,
+                "Longitude": -3.3333333333333428,
+                "InitialPopulation": 651262
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SIERRA LEONE:NORTHERN",
+            "NodeID": 131859620,
+            "HierarchyID": 289861,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.9166666666666572,
+                "Longitude": -12.333333333333343,
+                "InitialPopulation": 1921332
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SIERRA LEONE:EASTERN",
+            "NodeID": 132908187,
+            "HierarchyID": 289862,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.1666666666666572,
+                "Longitude": -11,
+                "InitialPopulation": 1456220
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MALI:KIDAL",
+            "NodeID": 142607644,
+            "HierarchyID": 290915,
+            "NodeAttributes": 
+            { 
+                "Latitude": 18.916666666666657,
+                "Longitude": 1.3333333333333144,
+                "InitialPopulation": 62814
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:HODH EL GHARBI",
+            "NodeID": 133760251,
+            "HierarchyID": 291031,
+            "NodeAttributes": 
+            { 
+                "Latitude": 16.166666666666657,
+                "Longitude": -9.9166666666666856,
+                "InitialPopulation": 300090
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:GORGOL",
+            "NodeID": 131400952,
+            "HierarchyID": 291034,
+            "NodeAttributes": 
+            { 
+                "Latitude": 15.916666666666657,
+                "Longitude": -12.916666666666686,
+                "InitialPopulation": 326928
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:GUIDIMAKA",
+            "NodeID": 131990768,
+            "HierarchyID": 291041,
+            "NodeAttributes": 
+            { 
+                "Latitude": 15.25,
+                "Longitude": -12.166666666666686,
+                "InitialPopulation": 237508
+            }
+        }, 
+        { 
+            "AdminID": "Africa:SENEGAL:THIES",
+            "NodeID": 128255209,
+            "HierarchyID": 289764,
+            "NodeAttributes": 
+            { 
+                "Latitude": 14.666666666666657,
+                "Longitude": -16.916666666666686,
+                "InitialPopulation": 1621899
+            }
+        }, 
+        { 
+            "AdminID": "Africa:GUINEA:LABE",
+            "NodeID": 131925187,
+            "HierarchyID": 290108,
+            "NodeAttributes": 
+            { 
+                "Latitude": 11.5,
+                "Longitude": -12.25,
+                "InitialPopulation": 960983
+            }
+        }, 
+        { 
+            "AdminID": "Africa:CHAD:MANDOUL",
+            "NodeID": 155255969,
+            "HierarchyID": 290730,
+            "NodeAttributes": 
+            { 
+                "Latitude": 8.6666666666666572,
+                "Longitude": 17.416666666666657,
+                "InitialPopulation": 605351
+            }
+        }, 
+        { 
+            "AdminID": "Africa:MAURITANIA:DAKLT NOUADHIBOU",
+            "NodeID": 128386355,
+            "HierarchyID": 291036,
+            "NodeAttributes": 
+            { 
+                "Latitude": 20.833333333333329,
+                "Longitude": -16.75,
+                "InitialPopulation": 104297
+            }
+        } ]
+}

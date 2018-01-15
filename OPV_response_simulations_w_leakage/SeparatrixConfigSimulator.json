@@ -1,0 +1,49 @@
+
+{ 
+    "SEPARATRIX": 
+    { 
+        "Model": 
+        { 
+            "Class": "Separatrix.Models.SimulatorModel",
+            "ForceReparse": 1
+        },
+        "interestLevel": 0.5,
+        "Resolution": 20,
+        "RandomSeed": 436513,
+        "NumInitialSamples": 500,
+        "NumNextSamples": 500,
+        "NumFinalSamples": 1000,
+        "MaxNumIterations": 2,
+        "DebugFlag": 0,
+        "FinalImageResolutionFactor": -1,
+        "OutputDirectory": "simulator",
+        "SaveFigures": 1,
+        "NOT_USING_GuessX": 
+        [
+            [ 1.552, 0.31900000000000001 ]
+        ],
+        "ForceRecomputeOutcomes": 1
+    },
+    "INFERENCE": 
+    { 
+        "min_lsf": 0,
+        "max_lsf": 1,
+        "DensityKernelWidth": 0.29999999999999999,
+        "MinSamplePoints": 3,
+        "NumNeighborsDensityCoef": 0.5,
+        "NumNeighborsInferenceCoef": 4,
+        "CountingKernelWidth": 0.050000000000000003,
+        "UseNWKernel": 0,
+        "NWKernelLSF": 0.050000000000000003
+    },
+    "NEXTPOINT": 
+    { 
+        "fractionLHS": 0,
+        "numTestPoints": 200,
+        "MCMCResolution": 1000,
+        "numMCMCIterations": 3,
+        "blur_sigma": 0.02,
+        "max_fraction_bdoe": 1,
+        "num_candidates_per_num_nextpoints": 4
+    }
+}

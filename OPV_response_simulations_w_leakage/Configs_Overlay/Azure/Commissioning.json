@@ -1,0 +1,14 @@
+{
+	"SIMULATION" :
+	{
+		"configFilePath"    : "",
+		"inputArgString"    : "-I \\\\172.16.1.4\\emodRoot\\Public\\input\\LKG\\Namawala\\ -O output\\"
+	},
+	"CLUSTER" :
+	{
+		"NodeGroup"   : "Azure_group1",
+		"BinDirectory"	: "\\\\172.16.1.4\\emodRoot\\Public\\bin",
+		"KernelPath"	: "\\\\172.16.1.4\\emodRoot\\Public\\bin\\Eradication_1_5.exe",
+		"WorkDirectory"	: "\\\\172.16.1.4\\emodRoot\\Home\\dklein\\output\\SimulatorDemo\\EWS"
+	}
+}

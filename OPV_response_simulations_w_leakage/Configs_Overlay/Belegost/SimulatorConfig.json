@@ -1,0 +1,7 @@
+{
+	"SIMULATOR" : 
+	{
+		"LocalWorkingDir"			: "C:\\Temp\\OPV_response_WestAfrica_simulations_w_leakage",
+		"OutputDir"					: "C:\\kevmc\\AMUG_DataRepos\\OPV_PostCessation_Response_Project\\OPV_response_WestAfrica_simulations_w_leakage"
+	}
+}

@@ -1,0 +1,7 @@
+{
+	"CLUSTER" :
+	{
+		"NodeGroup"   : "emod_abcd",
+        "EnvironmentName": "Belegost"
+	}
+}

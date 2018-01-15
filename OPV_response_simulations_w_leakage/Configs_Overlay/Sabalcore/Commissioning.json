@@ -1,0 +1,14 @@
+{
+	"SIMULATION" :
+	{
+		"configFilePath"    : "",
+    	"inputArgString"    : "-I \\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioInput -D \\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\bin"
+	},
+	"CLUSTER" :
+	{
+	"NodeGroup"			: "emod_de",
+	"BinDirectory"      : "",
+	"KernelPath"        : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioBin\\Eradication.exe",
+	"WorkDirectory"     : "\\\\sc.emodgh.com\\emodRoot\\home\\kmccarthy\\GenericPolioOutput\\140213"
+	}
+}

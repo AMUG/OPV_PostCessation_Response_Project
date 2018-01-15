@@ -1,0 +1,18 @@
+
+{ 
+    "PARAMETERS": 
+    { 
+        "nRetries": 2,
+        "LocalWorkingDir": "C:\\Temp"
+    },
+    "CLUSTER_RESUBMISSION_OVERRIDE": 
+    { 
+        "NOT_OVERRIDING_NodeGroup": "OnlineNodes,EMOD",
+        "NOT_OVERRIDING_BinDirectory": "",
+        "NOT_OVERRIDING_KernelPath": "\\\\rivendell.emod.int\\Emod\\public\\bin\\Eradication-r1781-i11.exe",
+        "NOT_OVERRIDING_WorkDirectory": "\\\\rivendell.emod.int\\EMOD\\home\\dklein\\output\\SimulatorDemo",
+        "NOT_OVERRIDING_Priority": 0,
+        "NOT_OVERRIDING_maxCores": 1,
+        "NOT_OVERRIDING_minCores": 1
+    }
+}

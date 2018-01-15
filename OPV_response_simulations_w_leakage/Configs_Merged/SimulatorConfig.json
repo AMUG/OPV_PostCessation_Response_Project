@@ -1,0 +1,40 @@
+
+{ 
+    "SIMULATOR": 
+    { 
+        "LocalWorkingDir": "C:\\Temp\\OPV_response_WestAfrica_simulations_w_leakage",
+        "DirectOutputFileAccess": 1,
+        "OutputDir": "C:\\kevmc\\AMUG_DataRepos\\OPV_PostCessation_Response_Project\\OPV_response_WestAfrica_simulations_w_leakage",
+        "IgnoreParserCache": 0,
+        "SubmissionThrottlingLimit": -1
+    },
+    "PARSERS": [ 
+        { 
+            "Enable": 1,
+            "Class": "ReducedInsetChartParser",
+            "Name": "ReducedInsetChartParser",
+            "FilesToRetrieve": "output\\InsetChart.json",
+            "StartTime": 1,
+            "EndTime": -1,
+            "Charts": [ "Infected", "New Infections", "Statistical Population", "Immunized Population", "Recovered Population", "Susceptible Population", "Infectious Population" ]
+        }, 
+        { 
+            "Enable": 1,
+            "Class": "ReducedSpatialOutputParser",
+            "Name": "RSOParser",
+            "DaysToAggregate": 30,
+            "FilesToRetrieve": [ "output\\SpatialReport_New_Infections.bin", "output\\SpatialReport_Population.bin", "output\\SpatialReport_Prevalence.bin" ]
+        } ],
+    "ANALYZERS": [ 
+        { 
+            "Enable": 1,
+            "Class": "SeparatrixExportationAnalyzer",
+            "Name": "SeparatrixAnalyzer"
+        } ],
+    "SIMULATION_LOGIC": 
+    { 
+        "Package_Name": "COMPSMatlabSimulationLogic",
+        "Commissioner": "CommissioningSimulationLogic",
+        "Processor": "ProcessingSimulationLogic"
+    }
+}

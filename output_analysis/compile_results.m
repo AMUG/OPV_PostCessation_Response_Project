@@ -1,5 +1,5 @@
 function [] = compile_results()
-output_base = ('\kevmc\AMUG_DataRepos\OPV_PostCessation_Response_Project\OPV_response_WestAfrica_simulations\');
+output_base = ('C:\Users\kmccarthy\Dropbox (IDM)\Repo\KM_OPV_PCR\OPV_response_WestAfrica_simulations\');
 output_dirs = dir(output_base);
 
 simconfigs = struct('R0_final',       zeros(length(output_dirs), 1), ...
@@ -31,7 +31,7 @@ end
 simconfigs = clear_empties(simconfigs, ind2fill);
 figouts = clear_empties(figouts, ind2fill);
 
-save([strrep(output_base, 'Simulator\', '') '\compiled_separatrices.mat', 'simconfigs', 'figouts', '-v7.3');
+save([output_base '\compiled_separatrices.mat'], 'simconfigs', 'figouts', '-v7.3');
 end
 
 function [thisstruct] = clear_empties(thisstruct, ind2clear)
